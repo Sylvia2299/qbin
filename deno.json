@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "deno.unstable"
+    ]
+  },
   "tasks": {
     "start": "deno run -NER --allow-ffi --allow-sys --unstable-kv --unstable-broadcast-channel index.ts",
     "dev": "deno run -NER --allow-ffi --allow-sys --unstable-kv --unstable-broadcast-channel --watch --watch-exclude='*.ts' index.ts",
@@ -22,5 +28,9 @@
     "lineWidth": 100,
     "proseWrap": "preserve"
   },
-  "unstable": ["fmt-component"]
+  "unstable": [
+    "fmt-component",
+    "kv",
+    "broadcast-channel"
+  ]
 }
