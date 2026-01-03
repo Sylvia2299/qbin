@@ -29,8 +29,8 @@
     "proseWrap": "preserve"
   },
   "unstable": [
-    "fmt-component",
     "kv",
-    "broadcast-channel"
+    "broadcast-channel",
+    "fmt-component"
   ]
 }
